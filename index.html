@@ -1,0 +1,1105 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="My work portfolio" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/2.0.0/modern-normalize.min.css"
+      integrity="sha512-4xo8blKMVCiXpTaLzQSLSw3KFOVPWhm/TRtuPVc4WG6kUgjH6J03IBuG7JZPkcWMxJ5huwaBpOpnwYElP/m6wg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="icon" type="image/svg+xml" href="/js_100_fulaytar/assets/favicon-fc5c0f93.svg" />
+    <title>Portfolio</title>
+    
+    <script type="module" crossorigin src="/js_100_fulaytar/commonHelpers.js"></script>
+    <link rel="modulepreload" crossorigin href="/js_100_fulaytar/assets/vendor-0d44c75d.js">
+    <link rel="stylesheet" href="/js_100_fulaytar/assets/vendor-ed6a6904.css">
+    <link rel="stylesheet" href="/js_100_fulaytar/assets/index-f4808b4c.css">
+  </head>
+  <body>
+    <header class="header container" id="header">
+  <nav class="nav">
+    <ul class="nav-list">
+      <li class="nav-item">
+        <a class="header-link-logo" href="./index.html">
+          <img
+            class="header-img"
+            srcset="data:image/png;base64,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 80w, /js_100_fulaytar/assets/header_avatar@2x-927a611c.png 160w"
+            sizes="(min-width: 768px) 80px, (max-width: 768px) 80px"
+            src="data:image/png;base64,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"
+            alt="avatar_person"
+            width="80"
+            height="80"
+            loading="lazy"
+          />
+          <h2 class="header-title">jefferson*</h2>
+        </a>
+      </li>
+      <li class="nav-item">
+        <button class="header_menu" type="button" title="menu pages">Menu</button>
+      </li>
+      <li class="nav-item">
+        <a href="#order" class="header_order_btn">Order the project</a>
+      </li>
+      <li class="nav-item">
+        <div class="close">
+          <div class="burger"></div>
+        </div>
+      </li>
+    </ul>
+    <ul class="list-menu-header">
+      <li class="list-menu-header-item"><a href="#about-me">About me</a></li>
+      <li class="list-menu-header-item"><a href="#benefits">Benefits</a></li>
+      <li class="list-menu-header-item"><a href="#projects">Projects</a></li>
+      <li class="list-menu-header-item"><a href="#faq">FAQ</a></li>
+    </ul>
+  </nav>
+</header>
+<div class="mob-menu">
+  <div class="container-mob-menu">
+    <ul class="list-open-modal">
+      <li class="list-open-item"><a href="#about-me">About me</a></li>
+      <li class="list-open-item"><a href="#benefits">Benefits</a></li>
+      <li class="list-open-item"><a href="#projects">Projects</a></li>
+      <li class="list-open-item"><a href="#faq">FAQ</a></li>
+    </ul>
+    <a href="#order" class="header_modal_order_btn">Order the project</a>
+  </div>
+  <div class="close-modal">
+    <div class="burger-modal"></div>
+  </div>
+</div>
+<div class="btn-up btn-up_hide">
+  <div class="btn-up-circle"></div>
+</div>
+
+    <main>
+      <section id="hero" class="hero-section section-decor">
+  <div class="container">
+    <!-- тут пиши код -->
+    <h1 class="hero-title responsive-heading">
+      <span class="first-line">Hello.</span>
+      <span class="second-line text"></span>
+    </h1>
+    <!-- bottom btns -->
+    <div class="buttons">
+      <ul class="social-list">
+        <li class="item item-1">
+          <a
+            href="https://www.instagram.com/goitclub/"
+            target="_blank"
+            rel="noopener noreferrer"
+            >IG</a
+          >
+        </li>
+        <li class="item item-2">
+          <a
+            href="https://www.facebook.com/goITclub/ "
+            target="_blank"
+            rel="noopener noreferrer"
+            >FB</a
+          >
+        </li>
+        <li class="item item-3">
+          <a
+            href="https://www.youtube.com/c/GoIT"
+            target="_blank"
+            rel="noopener noreferrer"
+            >YT</a
+          >
+        </li>
+        <li class="item">
+          <a
+            href="https://github.com/fulaytar/team_project_Portfolio"
+            target="_blank"
+            rel="noopener noreferrer"
+            >GH</a
+          >
+        </li>
+      </ul>
+      <!-- Mail to btn -->
+      <a
+        class="mail-btn"
+        href="mailto:lloydjefferson@gmail.com"
+        target="_blank"
+        rel="noopener noreferrer"
+        >lloydjefferson@gmail.com</a
+      >
+    </div>
+  </div>
+</section>
+
+      <section id="about-me" class="section about-me-section">
+  <h2 class="visually-hidden">About me</h2>
+  <div class="container flex">
+    <div class="first">
+      <ul class="about-me-menu">
+        <li class="about-me-menu-list">
+          <div class="about-me-box">
+            <p class="about-me-text">
+              I work with people all over the world to create impressive and
+              <span class="about-me-functional">functional</span>
+              <span class="about-me-websites">websites</span> that reflect each
+              client's unique personality.
+            </p>
+          </div>
+        </li>
+        <li class="about-me-menu-list">
+          <picture>
+            <source
+              media="(min-width: 1440px)"
+              srcset="/js_100_fulaytar/assets/large_about_image-46ec85fb.jpeg 1x, /js_100_fulaytar/assets/large_about_image@2x-88978d38.jpeg 2x"
+              type="image/jpg"
+            />
+
+            <source
+              media="(min-width: 768px)"
+              srcset="/js_100_fulaytar/assets/large_about_image-46ec85fb.jpeg 1x, /js_100_fulaytar/assets/large_about_image@2x-88978d38.jpeg 2x"
+              type="image/jpg"
+            />
+
+            <source
+              media="(max-width: 767px)"
+              srcset="/js_100_fulaytar/assets/about_me_mobile_photo-af0efd0b.jpeg 1x, /js_100_fulaytar/assets/about_me_mobile_photo@2x-889fbbde.jpeg 2x"
+              type="image/jpg"
+            />
+            <img
+              class="about-me-img"
+              alt="about-me-img"
+              width="704"
+              height="700"
+              loading="lazy"
+              src="/js_100_fulaytar/assets/about_me_mobile_photo-af0efd0b.jpeg"
+            />
+          </picture>
+        </li>
+      </ul>
+    </div>
+    <div class="second">
+      <ul class="accordion-wrapper">
+        <li class="accordion ac">
+          <h2 class="accordion-header ac-header reset-padding-top">
+            about me
+            <button
+              type="button"
+              class="accordion-button ac-trigger"
+              title="down"
+            >
+              <svg class="arrow">
+                <use href="/js_100_fulaytar/assets/icons-3468ad77.svg#icon-down"></use>
+              </svg>
+            </button>
+          </h2>
+          <div class="accordion-panel ac-panel">
+            <p class="about-me-description">
+              I am Lloyd Jefferson, a talented programmer with extensive
+              expertise in software development. I have an understanding of
+              different programming languages ​​and technologies, always ready
+              to improve my skills. I always follow the latest trends and look
+              for unconventional, creative solutions to problems. I have a high
+              level of analytical skills and am able to effectively solve even
+              the most difficult tasks encountered on the way.
+            </p>
+
+            <p class="about-me-description">
+              Able to work both independently and in a team. I can effectively
+              cooperate with colleagues, exchanging ideas and finding optimal
+              solutions. Professional maturity allows you to calmly cope with
+              challenges and stressful situations, while maintaining a high
+              quality of work.I am always looking for opportunities for
+              self-improvement. I actively study new technologies and practices
+              to stay abreast of the latest innovations. I have a strong
+              understanding of various programming languages, frameworks and
+              architectural concepts that allow me to create efficient and
+              scalable software.
+            </p>
+          </div>
+        </li>
+
+        <li class="accordion ac">
+          <h2 class="accordion-header ac-header">
+            role
+            <button
+              type="button"
+              class="accordion-button ac-trigger"
+              title="down"
+            >
+              <svg class="arrow">
+                <use href="/js_100_fulaytar/assets/icons-3468ad77.svg#icon-down"></use>
+              </svg>
+            </button>
+          </h2>
+          <div class="accordion-panel ac-panel">
+            <p class="about-me-role">Frontend development</p>
+
+            <p class="about-me-role">HeadlessCMS,Wordpress</p>
+
+            <p class="about-me-role">Blender(enjoy)</p>
+          </div>
+        </li>
+
+        <li class="accordion ac">
+          <h2 class="accordion-header ac-header">
+            education
+            <button
+              type="button"
+              class="accordion-button ac-trigger"
+              title="down"
+            >
+              <svg class="arrow">
+                <use href="/js_100_fulaytar/assets/icons-3468ad77.svg#icon-down"></use>
+              </svg>
+            </button>
+          </h2>
+          <div class="accordion-panel ac-panel">
+            <p class="about-me-education">
+              2018 - 2019 / Frontend Development Diploma, GoIT IT School, New
+              York
+            </p>
+
+            <p class="about-me-education">
+              2019 - 2020 / Advanced Web Development Certificate, GoIT IT
+              School, New York
+            </p>
+
+            <p class="about-me-education">
+              2020 - 2022 / Advanced Blender Animation Techniques, Udemy
+            </p>
+          </div>
+        </li>
+      </ul>
+    </div>
+    <div class="third">
+      <div class="swiper swiper2">
+        <!-- Additional required wrapper -->
+        <div class="swiper-wrapper">
+          <!-- Slides -->
+          <div class="swiper-slide">
+            <div class="swiper-slide-container"><p>HTML/CSS</p></div>
+          </div>
+          <div class="swiper-slide" style="width: 131.5px">
+            <div class="swiper-slide-container"><p>JavaScript</p></div>
+          </div>
+          <div class="swiper-slide">
+            <div class="swiper-slide-container"><p>React</p></div>
+          </div>
+          <div class="swiper-slide">
+            <div class="swiper-slide-container"><p>Node.js</p></div>
+          </div>
+          <div class="swiper-slide">
+            <div class="swiper-slide-container"><p>React Native</p></div>
+          </div>
+          <div class="swiper-slide">
+            <div class="swiper-slide-container"><p>Soft Skills</p></div>
+          </div>
+          <div class="swiper-slide">
+            <div class="swiper-slide-container"><p>Git</p></div>
+          </div>
+          <div class="swiper-slide">
+            <div class="swiper-slide-container"><p>Node js</p></div>
+          </div>
+        </div>
+      </div>
+      <div class="swiper-button-next sbn">
+        <button type="button" class="arrow-next" title="next">
+          <svg class="arrow-next-svg">
+            <use href="/js_100_fulaytar/assets/icons-3468ad77.svg#arrow-right"></use>
+          </svg>
+        </button>
+      </div>
+    </div>
+  </div>
+</section>
+
+      <section id="benefits" class="benefits-section section">
+  <div class="container">
+    <div class="benefits-title-list-wrapper">
+      <h2 class="benefits-title">Benefits of working with me</h2>
+      <div class="benefits-list-btn-wrapper">
+        <ul class="benefits-list">
+          <li class="benefits-item">
+            <div class="benefits-item-icon-container">
+              <svg class="benefits-item-icon" width="24" height="24">
+                <use href="/js_100_fulaytar/assets/icons-3468ad77.svg#icon-user"></use>
+              </svg>
+            </div>
+            <div class="benefits-item-text-container">
+              <h3 class="benefits-item-title">Expertise</h3>
+              <p class="benefits-item-text">
+                As a highly experienced developer, I have deep knowledge of
+                programming and website development.
+              </p>
+            </div>
+          </li>
+          <li class="benefits-item">
+            <div class="benefits-item-icon-container">
+              <svg class="benefits-item-icon" width="24" height="24">
+                <use href="/js_100_fulaytar/assets/icons-3468ad77.svg#icon-message-chat"></use>
+              </svg>
+            </div>
+            <div class="benefits-item-text-container">
+              <h3 class="benefits-item-title">Communication</h3>
+              <p class="benefits-item-text">
+                Understanding your needs and wants is my priority and I am
+                always open to discussions and corrections.
+              </p>
+            </div>
+          </li>
+          <li class="benefits-item">
+            <div class="benefits-item-icon-container">
+              <svg class="benefits-item-icon" width="24" height="24">
+                <use href="/js_100_fulaytar/assets/icons-3468ad77.svg#icon-brush"></use>
+              </svg>
+            </div>
+            <div class="benefits-item-text-container">
+              <h3 class="benefits-item-title">Art</h3>
+              <p class="benefits-item-text">
+                Thanks to my creative nature, I am ready to accept challenges
+                and help you bring your ideas to life.
+              </p>
+            </div>
+          </li>
+          <li class="benefits-item">
+            <div class="benefits-item-icon-container">
+              <svg class="benefits-item-icon" width="24" height="24">
+                <use href="/js_100_fulaytar/assets/icons-3468ad77.svg#icon-time"></use>
+              </svg>
+            </div>
+            <div class="benefits-item-text-container">
+              <h3 class="benefits-item-title">Urgent execution</h3>
+              <p class="benefits-item-text">
+                I understand how important time is to you. Ready to work quickly
+                and efficiently, without reducing the quality of work.
+              </p>
+            </div>
+          </li>
+        </ul>
+        <a
+          class="benefits-anchor-btn"
+          role="button"
+          aria-label="order the project"
+          href="#order"
+          >Order the project</a
+        >
+      </div>
+    </div>
+  </div>
+</section>
+
+      <section class="section section-projects" id="projects">
+  <div class="container">
+    <h2 class="title-projects">projects</h2>
+
+    <!-- Slider main container -->
+    <div class="swiper swiper1">
+      <ul class="swiper-wrapper swiper-wrapper-slides">
+        <li class="swiper-slide">
+          <div class="slide-description">
+            <ul class="slide-description-programs">
+              <li class="slide-description-programs-item">#react</li>
+              <li class="slide-description-programs-item">#js</li>
+              <li class="slide-description-programs-item">#node.js</li>
+              <li class="slide-description-programs-item">#git</li>
+            </ul>
+            <p class="slide-description-text" data-swiper-parallax="-300">
+              Programming Across Borders: Ideas, Technologies, Innovations
+            </p>
+            <a
+              class="slide-description-button"
+              href="https://fulaytar.github.io/team_project_Portfolio/"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <p>See project</p>
+            </a>
+          </div>
+          <div class="slide-wrapper-img">
+            <img
+              class="slide-img"
+              srcset="/js_100_fulaytar/assets/mobile_projects_1-871b0eba.jpeg 311w, /js_100_fulaytar/assets/large_projects_1-64924542.jpeg 614w, /js_100_fulaytar/assets/mobile_projects_1@2x-91df3ab3.jpeg 622w, /js_100_fulaytar/assets/large_projects_1@2x-ca74aac2.jpeg 1228w"
+              sizes="(min-width: 768px) 614px, (max-width: 767px) 311px"
+              src="/js_100_fulaytar/assets/mobile_projects_1-871b0eba.jpeg"
+              alt="screen project"
+              loading="lazy"
+              width="311"
+              height="195"
+            />
+          </div>
+        </li>
+        <li class="swiper-slide">
+          <div class="slide-description">
+            <ul class="slide-description-programs">
+              <li class="slide-description-programs-item">#react</li>
+              <li class="slide-description-programs-item">#js</li>
+              <li class="slide-description-programs-item">#node.js</li>
+              <li class="slide-description-programs-item">#git</li>
+            </ul>
+            <p class="slide-description-text" data-swiper-parallax="-300">
+              Programming Across Borders: Ideas, Technologies, Innovations
+            </p>
+            <a
+              class="slide-description-button"
+              href="https://fulaytar.github.io/team_project_Portfolio/"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <p>See project</p>
+            </a>
+          </div>
+          <div class="slide-wrapper-img">
+            <img
+              class="slide-img"
+              srcset="/js_100_fulaytar/assets/mobile_projects_2-6ee726c5.jpeg 311w, /js_100_fulaytar/assets/large_projects_2-994bb54e.jpeg 614w, /js_100_fulaytar/assets/mobile_projects_2@2x-7277bb8e.jpeg 622w, /js_100_fulaytar/assets/large_projects_2@2x-47b0e3a7.jpeg 1228w"
+              sizes="(min-width: 768px) 614px, (max-width: 767px) 311px"
+              src="/js_100_fulaytar/assets/mobile_projects_2-6ee726c5.jpeg"
+              alt="screen project"
+              loading="lazy"
+              width="311"
+              height="195"
+            />
+          </div>
+        </li>
+        <li class="swiper-slide">
+          <div class="slide-description">
+            <ul class="slide-description-programs">
+              <li class="slide-description-programs-item">#react</li>
+              <li class="slide-description-programs-item">#js</li>
+              <li class="slide-description-programs-item">#node.js</li>
+              <li class="slide-description-programs-item">#git</li>
+            </ul>
+            <p class="slide-description-text" data-swiper-parallax="-300">
+              Programming Across Borders: Ideas, Technologies, Innovations
+            </p>
+            <a
+              class="slide-description-button"
+              href="https://fulaytar.github.io/team_project_Portfolio/"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <p>See project</p>
+            </a>
+          </div>
+          <div class="slide-wrapper-img">
+            <img
+              class="slide-img"
+              srcset="/js_100_fulaytar/assets/mobile_projects_3-962269a8.jpeg 311w, /js_100_fulaytar/assets/large_projects_3-78e7d4b8.jpeg 614w, /js_100_fulaytar/assets/mobile_projects_3@2x-0372e963.jpeg 622w, /js_100_fulaytar/assets/large_projects_3@2x-49899007.jpeg 1228w"
+              sizes="(min-width: 768px) 614px, (max-width: 767px) 311px"
+              src="/js_100_fulaytar/assets/mobile_projects_3-962269a8.jpeg"
+              alt="screen project"
+              loading="lazy"
+              width="311"
+              height="195"
+            />
+          </div>
+        </li>
+        <li class="swiper-slide">
+          <div class="slide-description">
+            <ul class="slide-description-programs">
+              <li class="slide-description-programs-item">#react</li>
+              <li class="slide-description-programs-item">#js</li>
+              <li class="slide-description-programs-item">#node.js</li>
+              <li class="slide-description-programs-item">#git</li>
+            </ul>
+            <p class="slide-description-text" data-swiper-parallax="-300">
+              Programming Across Borders: Ideas, Technologies, Innovations
+            </p>
+            <a
+              class="slide-description-button"
+              href="https://fulaytar.github.io/team_project_Portfolio/"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <p>See project</p>
+            </a>
+          </div>
+          <div class="slide-wrapper-img">
+            <img
+              class="slide-img"
+              srcset="/js_100_fulaytar/assets/mobile_projects_4-f9bef59b.jpg 311w, /js_100_fulaytar/assets/large_projects_4-d98c9196.jpg 614w, /js_100_fulaytar/assets/mobile_projects_4@2x-3f6a258a.jpg 622w, /js_100_fulaytar/assets/large_projects_4@2x-590a715b.jpg 1228w"
+              sizes="(min-width: 768px) 614px, (max-width: 767px) 311px"
+              src="/js_100_fulaytar/assets/mobile_projects_4-f9bef59b.jpg"
+              alt="screen project"
+              loading="lazy"
+              width="311"
+              height="195"
+            />
+          </div>
+        </li>
+        <li class="swiper-slide">
+          <div class="slide-description">
+            <ul class="slide-description-programs">
+              <li class="slide-description-programs-item">#react</li>
+              <li class="slide-description-programs-item">#js</li>
+              <li class="slide-description-programs-item">#node.js</li>
+              <li class="slide-description-programs-item">#git</li>
+            </ul>
+            <p class="slide-description-text" data-swiper-parallax="-300">
+              Programming Across Borders: Ideas, Technologies, Innovations
+            </p>
+            <a
+              class="slide-description-button"
+              href="https://fulaytar.github.io/team_project_Portfolio/"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <p>See project</p>
+            </a>
+          </div>
+          <div class="slide-wrapper-img">
+            <img
+              class="slide-img"
+              srcset="/js_100_fulaytar/assets/mobile_projects_5-449e6a51.jpg 311w, /js_100_fulaytar/assets/large_projects_5-e99d1649.jpg 614w, /js_100_fulaytar/assets/mobile_projects_5@2x-b83f4e78.jpg 622w, /js_100_fulaytar/assets/large_projects_5@2x-3df05063.jpg 1228w"
+              sizes="(min-width: 768px) 614px, (max-width: 767px) 311px"
+              src="../img/projects/mobile/mobile_projects_5.jpg"
+              alt="screen project"
+              loading="lazy"
+              width="311"
+              height="195"
+            />
+          </div>
+        </li>
+        <li class="swiper-slide">
+          <div class="slide-description">
+            <ul class="slide-description-programs">
+              <li class="slide-description-programs-item">#react</li>
+              <li class="slide-description-programs-item">#js</li>
+              <li class="slide-description-programs-item">#node.js</li>
+              <li class="slide-description-programs-item">#git</li>
+            </ul>
+            <p class="slide-description-text" data-swiper-parallax="-300">
+              Programming Across Borders: Ideas, Technologies, Innovations
+            </p>
+            <a
+              class="slide-description-button"
+              href="https://fulaytar.github.io/team_project_Portfolio/"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <p>See project</p>
+            </a>
+          </div>
+          <div class="slide-wrapper-img">
+            <img
+              class="slide-img"
+              srcset="/js_100_fulaytar/assets/mobile_projects_6-f0b6151d.jpg 311w, /js_100_fulaytar/assets/large_projects_6-8ebfe441.jpg 614w, /js_100_fulaytar/assets/mobile_projects_6@2x-6c6626b5.jpg 622w, /js_100_fulaytar/assets/large_projects_6@2x-2f50c194.jpg 1228w"
+              sizes="(min-width: 768px) 614px, (max-width: 767px) 311px"
+              src="/js_100_fulaytar/assets/mobile_projects_6-f0b6151d.jpg"
+              alt="screen project"
+              loading="lazy"
+              width="311"
+              height="195"
+            />
+          </div>
+        </li>
+        <li class="swiper-slide">
+          <div class="slide-description">
+            <ul class="slide-description-programs">
+              <li class="slide-description-programs-item">#react</li>
+              <li class="slide-description-programs-item">#js</li>
+              <li class="slide-description-programs-item">#node.js</li>
+              <li class="slide-description-programs-item">#git</li>
+            </ul>
+            <p class="slide-description-text" data-swiper-parallax="-300">
+              Programming Across Borders: Ideas, Technologies, Innovations
+            </p>
+            <a
+              class="slide-description-button"
+              href="https://fulaytar.github.io/team_project_Portfolio/"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <p>See project</p>
+            </a>
+          </div>
+          <div class="slide-wrapper-img">
+            <img
+              class="slide-img"
+              srcset="/js_100_fulaytar/assets/mobile_projects_7-a9d1b82b.jpg 311w, /js_100_fulaytar/assets/large_projects_7-b27c7157.jpg 614w, /js_100_fulaytar/assets/mobile_projects_7@2x-78c12da4.jpg 622w, /js_100_fulaytar/assets/large_projects_7@2x-16ab7959.jpg 1228w"
+              sizes="(min-width: 768px) 614px, (max-width: 767px) 311px"
+              src="/js_100_fulaytar/assets/mobile_projects_7-a9d1b82b.jpg"
+              alt="screen project"
+              loading="lazy"
+              width="311"
+              height="195"
+            />
+          </div>
+        </li>
+        <li class="swiper-slide">
+          <div class="slide-description">
+            <ul class="slide-description-programs">
+              <li class="slide-description-programs-item">#react</li>
+              <li class="slide-description-programs-item">#js</li>
+              <li class="slide-description-programs-item">#node.js</li>
+              <li class="slide-description-programs-item">#git</li>
+            </ul>
+            <p class="slide-description-text" data-swiper-parallax="-300">
+              Programming Across Borders: Ideas, Technologies, Innovations
+            </p>
+            <a
+              class="slide-description-button"
+              href="https://fulaytar.github.io/team_project_Portfolio/"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <p>See project</p>
+            </a>
+          </div>
+          <div class="slide-wrapper-img">
+            <img
+              class="slide-img"
+              srcset="/js_100_fulaytar/assets/mobile_projects_8-be6de152.jpg 311w, /js_100_fulaytar/assets/large_projects_8-e0872f6e.jpg 614w, /js_100_fulaytar/assets/mobile_projects_8@2x-bdf54f40.jpg 622w, /js_100_fulaytar/assets/large_projects_8@2x-5a8c761a.jpg 1228w"
+              sizes="(min-width: 768px) 614px, (max-width: 767px) 311px"
+              src="/js_100_fulaytar/assets/mobile_projects_8-be6de152.jpg"
+              alt="screen project"
+              loading="lazy"
+              width="311"
+              height="195"
+            />
+          </div>
+        </li>
+        <li class="swiper-slide">
+          <div class="slide-description">
+            <ul class="slide-description-programs">
+              <li class="slide-description-programs-item">#react</li>
+              <li class="slide-description-programs-item">#js</li>
+              <li class="slide-description-programs-item">#node.js</li>
+              <li class="slide-description-programs-item">#git</li>
+            </ul>
+            <p class="slide-description-text" data-swiper-parallax="-300">
+              Programming Across Borders: Ideas, Technologies, Innovations
+            </p>
+            <a
+              class="slide-description-button"
+              href="https://fulaytar.github.io/team_project_Portfolio/"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <p>See project</p>
+            </a>
+          </div>
+          <div class="slide-wrapper-img">
+            <img
+              class="slide-img"
+              srcset="/js_100_fulaytar/assets/mobile_projects_9-60e20191.jpg 311w, /js_100_fulaytar/assets/large_projects_9-5f906f01.jpg 614w, /js_100_fulaytar/assets/mobile_projects_9@2x-6a0736fb.jpg 622w, /js_100_fulaytar/assets/large_projects_9@2x-5aece0e3.jpg 1228w"
+              sizes="(min-width: 768px) 614px, (max-width: 767px) 311px"
+              src="/js_100_fulaytar/assets/mobile_projects_9-60e20191.jpg"
+              alt="screen project"
+              loading="lazy"
+              width="311"
+              height="195"
+            />
+          </div>
+        </li>
+        <li class="swiper-slide">
+          <div class="slide-description">
+            <ul class="slide-description-programs">
+              <li class="slide-description-programs-item">#react</li>
+              <li class="slide-description-programs-item">#js</li>
+              <li class="slide-description-programs-item">#node.js</li>
+              <li class="slide-description-programs-item">#git</li>
+            </ul>
+            <p class="slide-description-text" data-swiper-parallax="-300">
+              Programming Across Borders: Ideas, Technologies, Innovations
+            </p>
+            <a
+              class="slide-description-button"
+              href="https://fulaytar.github.io/team_project_Portfolio/"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <p>See project</p>
+            </a>
+          </div>
+          <div class="slide-wrapper-img">
+            <img
+              class="slide-img"
+              srcset="/js_100_fulaytar/assets/mobile_projects_10-4e33bb17.jpg 311w, /js_100_fulaytar/assets/large_projects_10-4e5f24b4.jpg 614w, /js_100_fulaytar/assets/mobile_projects_10@2x-35cab80f.jpg 622w, /js_100_fulaytar/assets/large_projects_10@2x-68c339f6.jpg 1228w"
+              sizes="(min-width: 768px) 614px, (max-width: 767px) 311px"
+              src="/js_100_fulaytar/assets/mobile_projects_10-4e33bb17.jpg"
+              alt="screen project"
+              loading="lazy"
+              width="311"
+              height="195"
+            />
+          </div>
+        </li>
+        <li class="swiper-slide">
+          <div class="slide-description">
+            <ul class="slide-description-programs">
+              <li class="slide-description-programs-item">#react</li>
+              <li class="slide-description-programs-item">#js</li>
+              <li class="slide-description-programs-item">#node.js</li>
+              <li class="slide-description-programs-item">#git</li>
+            </ul>
+            <p class="slide-description-text" data-swiper-parallax="-300">
+              Programming Across Borders: Ideas, Technologies, Innovations
+            </p>
+            <a
+              class="slide-description-button"
+              href="https://fulaytar.github.io/team_project_Portfolio/"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <p>See project</p>
+            </a>
+          </div>
+          <div class="slide-wrapper-img">
+            <img
+              class="slide-img"
+              srcset="/js_100_fulaytar/assets/mobile_projects_11-9b7856e8.jpg 311w, /js_100_fulaytar/assets/large_projects_11-78b7a53a.jpg 614w, /js_100_fulaytar/assets/mobile_projects_11@2x-b9ee6c11.jpg 622w, /js_100_fulaytar/assets/large_projects_11@2x-39baae79.jpg 1228w"
+              sizes="(min-width: 768px) 614px, (max-width: 767px) 311px"
+              src="/js_100_fulaytar/assets/mobile_projects_11-9b7856e8.jpg"
+              alt="screen project"
+              loading="lazy"
+              width="311"
+              height="195"
+            />
+          </div>
+        </li>
+        <li class="swiper-slide">
+          <div class="slide-description">
+            <ul class="slide-description-programs">
+              <li class="slide-description-programs-item">#react</li>
+              <li class="slide-description-programs-item">#js</li>
+              <li class="slide-description-programs-item">#node.js</li>
+              <li class="slide-description-programs-item">#git</li>
+            </ul>
+            <p class="slide-description-text" data-swiper-parallax="-300">
+              Programming Across Borders: Ideas, Technologies, Innovations
+            </p>
+            <a
+              class="slide-description-button"
+              href="https://fulaytar.github.io/team_project_Portfolio/"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <p>See project</p>
+            </a>
+          </div>
+          <div class="slide-wrapper-img">
+            <img
+              class="slide-img"
+              srcset="/js_100_fulaytar/assets/mobile_projects_12-de9785be.jpg 311w, /js_100_fulaytar/assets/large_projects_12-55077ffd.jpg 614w, /js_100_fulaytar/assets/mobile_projects_12@2x-0b18e925.jpg 622w, /js_100_fulaytar/assets/large_projects_12@2x-76f92365.jpg 1228w"
+              sizes="(min-width: 768px) 614px, (max-width: 767px) 311px"
+              src="/js_100_fulaytar/assets/mobile_projects_12-de9785be.jpg"
+              alt="screen project"
+              loading="lazy"
+              width="311"
+              height="195"
+            />
+          </div>
+        </li>
+        <li class="swiper-slide">
+          <div class="slide-description">
+            <ul class="slide-description-programs">
+              <li class="slide-description-programs-item">#react</li>
+              <li class="slide-description-programs-item">#js</li>
+              <li class="slide-description-programs-item">#node.js</li>
+              <li class="slide-description-programs-item">#git</li>
+            </ul>
+            <p class="slide-description-text" data-swiper-parallax="-300">
+              Programming Across Borders: Ideas, Technologies, Innovations
+            </p>
+            <a
+              class="slide-description-button"
+              href="https://fulaytar.github.io/team_project_Portfolio/"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <p>See project</p>
+            </a>
+          </div>
+          <div class="slide-wrapper-img">
+            <img
+              class="slide-img"
+              srcset="/js_100_fulaytar/assets/mobile_projects_13-cc81ca0e.jpg 311w, /js_100_fulaytar/assets/large_projects_13-8666c9f4.jpg 614w, /js_100_fulaytar/assets/mobile_projects_13@2x-0e588ef7.jpg 622w, /js_100_fulaytar/assets/large_projects_13@2x-d89f8197.jpg 1228w"
+              sizes="(min-width: 768px) 614px, (max-width: 767px) 311px"
+              src="/js_100_fulaytar/assets/mobile_projects_13-cc81ca0e.jpg"
+              alt="screen project"
+              loading="lazy"
+              width="311"
+              height="195"
+            />
+          </div>
+        </li>
+      </ul>
+    </div>
+    <div class="wrapper-btn-arrows">
+      <div class="swiper-button-prev swiper-btn-prev">
+        <svg class="btn-arrow-prev">
+          <use href="/js_100_fulaytar/assets/icons-3468ad77.svg#arrow-left"></use>
+        </svg>
+      </div>
+      <div class="swiper-button-next swiper-btn-next">
+        <svg class="btn-arrow-next">
+          <use href="/js_100_fulaytar/assets/icons-3468ad77.svg#arrow-right"></use>
+        </svg>
+      </div>
+    </div>
+  </div>
+</section>
+
+      <section class="section faq-section" id="faq">
+  <div class="container">
+    <h2 class="faq-header">FAQ</h2>
+    <ul class="accordion-container faq-list">
+      <li class="ac faq-item faq-item-first">
+        <h3 class="ac-header faq-item-header">
+          <button type="button" class="ac-trigger faq-item-btn" >
+            What programming languages ​​are most often used in your project?
+            <span class="faq-icon">
+              <svg class="icon-down">
+                <use href="/js_100_fulaytar/assets/icons-3468ad77.svg#icon-down"></use>
+              </svg>
+              <svg class="icon-top">
+                <use href="/js_100_fulaytar/assets/icons-3468ad77.svg#icon-top"></use>
+              </svg>
+            </span>
+          </button>
+        </h3>
+        <div class="ac-panel faq-item-content">
+          <p class="ac-text faq-item-text">
+            In the field of web development, there are various technologies and programming languages. Typically, this
+            includes a combination of frontend (client side) and backend (server side) languages.
+          </p>
+        </div>
+      </li>
+
+      <li class="ac faq-item faq-item-second">
+        <h3 class="ac-header faq-item-header">
+          <button type="button" class="ac-trigger faq-item-btn">
+            What are the deadlines for the project?
+            <span class="faq-icon">
+              <svg class="icon-down">
+                <use href="/js_100_fulaytar/assets/icons-3468ad77.svg#icon-down"></use>
+              </svg>
+              <svg class="icon-top">
+                <use href="/js_100_fulaytar/assets/icons-3468ad77.svg#icon-top"></use>
+              </svg>
+            </span>
+          </button>
+        </h3>
+        <div class="ac-panel faq-item-content">
+          <p class="ac-text faq-item-text">
+            The terms of project implementation depend to a large extent on a number of factors, such as the scope of
+            the project, its complexity, and the availability of resources. Determining exact deadlines is a difficult
+            task, and it usually occurs during the planning phase of the project.
+          </p>
+        </div>
+      </li>
+
+      <li class="ac faq-item faq-item-third">
+        <h3 class="ac-header faq-item-header">
+          <button type="button" class="ac-trigger faq-item-btn">
+            What payment methods do you accept?
+            <span class="faq-icon">
+              <svg class="icon-down">
+                <use href="/js_100_fulaytar/assets/icons-3468ad77.svg#icon-down"></use>
+              </svg>
+              <svg class="icon-top">
+                <use href="/js_100_fulaytar/assets/icons-3468ad77.svg#icon-top"></use>
+              </svg>
+            </span>
+          </button>
+        </h3>
+        <div class="ac-panel faq-item-content">
+          <p class="ac-text faq-item-text">
+            Payment through credit and debit cards such as Visa, MasterCard, specialized electronic payment systems such
+            as PayPal, as well as payments in cryptocurrencies such as Bitcoin, Ethereum and others.
+          </p>
+        </div>
+      </li>
+
+      <li class="ac faq-item">
+        <h3 class="ac-header faq-item-header">
+          <button type="button" class="ac-trigger faq-item-btn">
+            How can I contact you?
+            <span class="faq-icon">
+              <svg class="icon-down">
+                <use href="/js_100_fulaytar/assets/icons-3468ad77.svg#icon-down"></use>
+              </svg>
+              <svg class="icon-top">
+                <use href="/js_100_fulaytar/assets/icons-3468ad77.svg#icon-top"></use>
+              </svg>
+            </span>
+          </button>
+        </h3>
+        <div class="ac-panel faq-item-content">
+          <p class="ac-text faq-item-text">
+            In the field of web development, there are various technologies and programming languages. Typically, this
+            includes a combination of frontend (client side) and backend (server side) languages.
+          </p>
+        </div>
+      </li>
+
+      <li class="ac faq-item">
+        <h3 class="ac-header faq-item-header">
+          <button type="button" class="ac-trigger faq-item-btn">
+            Do you provide advice or support?
+            <span class="faq-icon">
+              <svg class="icon-down">
+                <use href="/js_100_fulaytar/assets/icons-3468ad77.svg#icon-down"></use>
+              </svg>
+              <svg class="icon-top">
+                <use href="/js_100_fulaytar/assets/icons-3468ad77.svg#icon-top"></use>
+              </svg>
+            </span>
+          </button>
+        </h3>
+        <div class="ac-panel faq-item-content">
+          <p class="ac-text faq-item-text">
+            The terms of project implementation depend to a large extent on a number of factors, such as the scope of
+            the project, its complexity, and the availability of resources. Determining exact deadlines is a difficult
+            task, and it usually occurs during the planning phase of the project.
+          </p>
+        </div>
+      </li>
+
+      <li class="ac faq-item">
+        <h3 class="ac-header faq-item-header">
+          <button type="button" class="ac-trigger faq-item-btn">
+            What does the process of developing a software product look like from idea to implementation?
+            <span class="faq-icon">
+              <svg class="icon-down">
+                <use href="/js_100_fulaytar/assets/icons-3468ad77.svg#icon-down"></use>
+              </svg>
+              <svg class="icon-top">
+                <use href="/js_100_fulaytar/assets/icons-3468ad77.svg#icon-top"></use>
+              </svg>
+            </span>
+          </button>
+        </h3>
+        <div class="ac-panel faq-item-content">
+          <p class="ac-text faq-item-text">
+            Payment through credit and debit cards such as Visa, MasterCard, specialized electronic payment systems such
+            as PayPal, as well as payments in cryptocurrencies such as Bitcoin, Ethereum and others.
+          </p>
+        </div>
+      </li>
+    </ul>
+  </div>
+</section>
+      <section id="covers" class="container">
+  <h2 class="visually-hidden">Projects covers</h2>
+  <div id="covers-container">
+    <ul class="covers-list">
+      <!-- tablet same as desktop -->
+      <li class="covers-item"><img srcset="/js_100_fulaytar/assets/mobile_project1-97b706bf.png 283w, /js_100_fulaytar/assets/mobile_project1@2x-0ee0120e.png 565w, /js_100_fulaytar/assets/tablet_project1-9e7c3a9c.png 544w, /js_100_fulaytar/assets/tablet_project1@2x-4a3e0bfa.png 1088w" src="/js_100_fulaytar/assets/mobile_project1-97b706bf.png" alt="Project 1"
+              loading="lazy"
+          sizes="(min-width: 768px) 544px, (max-width: 767px) 283px">
+      </li>
+      <li class="covers-item"><img srcset="/js_100_fulaytar/assets/mobile_project2-1de3125d.png 283w, /js_100_fulaytar/assets/mobile_project2@2x-f9c87707.png 565w, /js_100_fulaytar/assets/tablet_project2-75db0d61.png 544w, /js_100_fulaytar/assets/tablet_project2@2x-c82a2d87.png 1088w" src="/js_100_fulaytar/assets/mobile_project2-1de3125d.png" 
+              alt="Project 2" loading="lazy"
+          sizes="(min-width: 768px) 544px, (max-width: 767px) 283px">
+      </li>
+      <li class="covers-item"><img srcset="/js_100_fulaytar/assets/mobile_project3-dc033fa0.png 283w, /js_100_fulaytar/assets/mobile_project3@2x-c7c26fd1.png 565w, /js_100_fulaytar/assets/tablet_project3-991c7c20.png 544w, /js_100_fulaytar/assets/tablet_project3@2x-7a9cb422.png 1088w" src="/js_100_fulaytar/assets/mobile_project3-dc033fa0.png" 
+              alt="Project 3" loading="lazy"
+          sizes="(min-width: 768px) 544px, (max-width: 767px) 283px">
+      </li>
+      <li class="covers-item"><img srcset="/js_100_fulaytar/assets/mobile_project4-b509db46.png 283w, /js_100_fulaytar/assets/mobile_project4@2x-c2fb50e2.png 565w, /js_100_fulaytar/assets/tablet_project4-2a7961f2.png 544w, /js_100_fulaytar/assets/tablet_project4@2x-05496bc2.png 1088w" src="/js_100_fulaytar/assets/mobile_project4-b509db46.png" 
+              alt="Project 4" loading="lazy"
+          sizes="(min-width: 768px) 544px, (max-width: 767px) 283px">
+      </li>
+      <li class="covers-item"><img srcset="/js_100_fulaytar/assets/mobile_project5-55999887.png 283w, /js_100_fulaytar/assets/mobile_project5@2x-fb957ae9.png 565w, /js_100_fulaytar/assets/tablet_project5-d327ddd8.png 544w, /js_100_fulaytar/assets/tablet_project5@2x-4bb7c2da.png 1088w" src="/js_100_fulaytar/assets/mobile_project5-55999887.png"
+               alt="Project 5" loading="lazy"
+          sizes="(min-width: 768px) 544px, (max-width: 767px) 283px">
+      </li>
+      <li class="covers-item"><img srcset="/js_100_fulaytar/assets/mobile_project6-f84bc699.png 283w, /js_100_fulaytar/assets/mobile_project6@2x-f725e42a.png 565w, /js_100_fulaytar/assets/tablet_project6-c28b7a40.png 544w, /js_100_fulaytar/assets/tablet_project6@2x-07da2430.png 1088w" src="/js_100_fulaytar/assets/mobile_project6-f84bc699.png"
+               alt="Project 6" loading="lazy"
+          sizes="(min-width: 768px) 544px, (max-width: 767px) 283px">
+      </li>
+      <li class="covers-item"><img srcset="/js_100_fulaytar/assets/mobile_project7-0e89444f.png 283w, /js_100_fulaytar/assets/mobile_project7@2x-5e7bda88.png 565w, /js_100_fulaytar/assets/tablet_project7-e6e97a7f.png 544w, /js_100_fulaytar/assets/tablet_project7@2x-de69f4ba.png 1088w" src="/js_100_fulaytar/assets/mobile_project7-0e89444f.png" 
+              alt="Project 7" loading="lazy"
+          sizes="(min-width: 768px) 544px, (max-width: 767px) 283px">
+      </li>
+      <li class="covers-item"><img srcset="/js_100_fulaytar/assets/mobile_project8-2a94dec4.png 283w, /js_100_fulaytar/assets/mobile_project8@2x-7d0412c2.png 565w, /js_100_fulaytar/assets/tablet_project8-a74d19c1.png 544w, /js_100_fulaytar/assets/tablet_project8@2x-c32cc1c3.png 1088w" src="/js_100_fulaytar/assets/mobile_project8-2a94dec4.png"
+              alt="Project 8" loading="lazy"
+          sizes="(min-width: 768px) 544px, (max-width: 767px) 283px">
+      </li>
+      <li class="covers-item"><img srcset="/js_100_fulaytar/assets/mobile_project9-34651dda.png 283w, /js_100_fulaytar/assets/mobile_project9@2x-a570b8a2.png 565w, /js_100_fulaytar/assets/tablet_project9-4786c479.png 544w, /js_100_fulaytar/assets/tablet_project9@2x-1c619406.png 1088w" src="/js_100_fulaytar/assets/mobile_project9-34651dda.png" 
+              alt="Project 9" loading="lazy"
+          sizes="(min-width: 768px) 544px, (max-width: 767px) 283px">
+      </li>
+      <li class="covers-item"><img srcset="/js_100_fulaytar/assets/mobile_project10-f504a128.png 283w, /js_100_fulaytar/assets/mobile_project10@2x-a4a9437c.png 565w, /js_100_fulaytar/assets/tablet_project10-713adfae.png 544w, /js_100_fulaytar/assets/tablet_project10@2x-1c501ece.png 1088w" src="/js_100_fulaytar/assets/mobile_project10-f504a128.png" 
+              alt="Project 10" loading="lazy"
+          sizes="(min-width: 768px) 544px, (max-width: 767px) 283px">
+      </li>
+    </ul>
+  </div>
+</section>
+      <section class="section reviews-section" id="reviews">
+  <div class="reviews-container container">
+    <h2 class="reviews-header">Reviews</h2>
+    <div class="swiper swiper6">
+      <ul class="reviews swiper-wrapper"></ul>
+      <div class="arrows">
+        <div class="swiper-button-prev swiper-btn-prev-review">
+          <svg class="swiper-arrow-prev">
+            <use href="/js_100_fulaytar/assets/icons-3468ad77.svg#arrow-left"></use>
+          </svg>
+        </div>
+        <div class="swiper-button-next swiper-btn-next-review">
+          <svg class="swiper-arrow-next">
+            <use href="/js_100_fulaytar/assets/icons-3468ad77.svg#arrow-right"></use>
+          </svg>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+    </main>
+    <footer class="footer" id="order">
+  <div class="container">
+    <div class="work-together">
+
+
+        <picture>
+          <source media="(min-width:768px)"
+                  srcset="data:image/png;base64,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 1x, /js_100_fulaytar/assets/large_footer_avatar@2x-bb1d3a19.png 2x">
+          <source media="(max-width:767px)" srcset="data:image/png;base64,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 1x, data:image/png;base64,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 2x">
+          <img src="data:image/png;base64,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" alt="avatar" loading="lazy" width="70" height="70">
+        </picture>
+        <h2>
+          Let's <span class="work-together__title__text_mark">work</span>
+          <span class='work-together__title__sub'>together</span>
+        </h2>
+
+
+      <form class="form work-together__form" id="form">
+        <div class="grid">
+          <div class="grid-column">
+            <div class="input-holder">
+              <input type="email" name="email" placeholder="clients@gmail.com" class="form-control">
+            </div>
+            <div class="input-holder">
+              <input type="text" name="comment" placeholder="comments" class="form-control">
+            </div>
+          </div>
+          <button type="submit" class="btn-submit" title="send form">Send</button>
+        </div>
+      </form>
+
+      <address class='work-together__link'>
+        <a href="mailto:lloydjefferson@gmail.com">lloydjefferson@gmail.com</a>
+        <a href="tel:+380111111111">+380 11 1111 11 11</a>
+      </address>
+
+      <div class="modal" id="modal">
+        <button data-close-button class="modal-close__button" id="close-button" title="close">
+          &times;
+        </button>
+        <div class="content"></div>
+      </div>
+      <div id="overlay"></div>
+    </div>
+  </div>
+</footer>
+
+
+    
+  </body>
+</html>
